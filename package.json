@@ -1,7 +1,7 @@
 {
-   "name": "suhail-md-3",
+   "name": "Mahiru-Bot",
    "version": "3.0.1",
-   "status": "testing suhail-md-3",
+   "status": "testing Mahiru-Bot",
    "description": "Multi device whatsapp bot.",
    "main": "index.js",
    "type": "commonjs",
