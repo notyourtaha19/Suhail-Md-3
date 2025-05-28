@@ -7,9 +7,9 @@ global.audio= "" ;
 global.video= "" ;
 global.port =process.env.PORT 
 global.appUrl=process.env.APP_URL || ""     // put your deploy app/bot url here, for 24/7 for (render , koyeb, glitch)
-global.email ="saimsamsun789@gmail.com"
-global.location="Lahore,Pakistan."
+global.email ="tahahere1213@gmail.com" // Changed
 
+// global.location="Lahore,Pakistan."; // Removed
 
 global.mongodb= process.env.MONGODB_URI || "false"  
 global.allowJids= process.env.ALLOW_JID || "null" 
@@ -17,18 +17,16 @@ global.blockJids= process.env.BLOCK_JID || "null"
 global.DATABASE_URL = process.env.DATABASE_URL || "false"
 
 global.timezone= process.env.TZ || process.env.TIME_ZONE || "Asia/Karachi";
-global.github=process.env.GITHUB|| "https://github.com/SuhailTechInfo/Suhail-Md-3";
-global.gurl  =process.env.GURL  || "https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07";
-global.website =process.env.GURL || "https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07" ; 
+global.github=process.env.GITHUB|| "https://github.com/SuhailTechInfo/Suhail-Md-3"; // Kept default as no specific instruction to change
+// global.gurl  =process.env.GURL  || "https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07"; // Removed
+// global.website =process.env.GURL || "https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07" ; // Removed
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://i.ibb.co/TgwRyHR/Ephoto360-com-166de101e03cd7.jpg" || "https://i.ibb.co/bH1kbX0/a4c0b1af253197d4837ff6760d5b81c0.jpg" ; // SET LOGO FOR IMAGE 
-global.caption = process.env.CAPTION || global.caption || "Made With LOVE!" 
+global.caption = process.env.CAPTION || "✨ Mahiru-Bot | Powered by 🗣️ Ͳ Ꭺ Ꮋ Ꭺ 🔥 ✨"; // Changed and polished
 
 
-global.devs = "" // Developer Contacts
+global.devs = "923004204338" // Developer Contacts - Changed
 global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "null";
-global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "";
-
-
+global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "923004204338"; // Changed
 
 
 //========================= [ BOT SETTINGS ] ======8===================\\
@@ -66,17 +64,17 @@ global.SESSION_ID = process.env.SESSION_ID  || "SUHAIL_05_46_05_28_ewogICJjcmVkc
 
 module.exports = {
 
-  menu: process.env.MENU || "", /**  Available @MENU @Schemes 1: Aztec_Md, 2: A17_Md, 3: Suhail-Md Default ---------- If Not Choose then it Randomely Pic One Of Them Each time **/
+  menu: process.env.MENU || "", /** Available @MENU @Schemes 1: Aztec_Md, 2: A17_Md, 3: Suhail-Md Default ---------- If Not Choose then it Randomely Pic One Of Them Each time **/
 
   HANDLERS: process.env.PREFIX  || ".",
   BRANCH  : process.env.BRANCH  || "main",
   VERSION : process.env.VERSION || "3.0.1-developement",
-  caption : global.caption || "" , // ```『 ᴘᴏᴡᴇʀᴇᴅ ʙʏ GlobalTechInfo ® 』```", //*『sᴜʙsᴄʀɪʙᴇ • sᴜʜᴀɪʟ ᴛᴇᴄʜ』*\n youtube.com/@GlobalTechInfo"),
+  caption : global.caption || "✨ Mahiru-Bot | Powered by 🗣️ Ͳ Ꭺ Ꮋ Ꭺ 🔥 ✨" , // Changed and polished
  
-  author : process.env.PACK_AUTHER|| "",
-  packname: process.env.PACK_NAME || "",
-  botname : process.env.BOT_NAME  || "Mahiru-Bot",
-  ownername:process.env.OWNER_NAME|| "Ͳ Ꭺ Ꮋ Ꭺ",
+  author : process.env.PACK_AUTHER|| "🗣️ Ͳ Ꭺ Ꮋ Ꭺ 🔥", // Changed
+  packname: process.env.PACK_NAME || "Mahiru-Bot Sticker Pack", // Added a default packname
+  botname : process.env.BOT_NAME  || "Mahiru-Bot", // Changed
+  ownername:process.env.OWNER_NAME|| "🗣️ Ͳ Ꭺ Ꮋ Ꭺ 🔥", // Changed
 
 
   errorChat : process.env.ERROR_CHAT || "",
@@ -91,8 +89,7 @@ module.exports = {
 
 
   WORKTYPE: process.env.WORKTYPE || process.env.MODE|| "private",
-  LANG: ( process.env.THEME ||  "SUHAIL"  ).toUpperCase(),
-
+  LANG: ( process.env.THEME ||  "SUHAIL"  ).toUpperCase(), // Kept SUHAIL as default theme, can be changed if needed
 
 
 };
@@ -141,3 +138,5 @@ fs.watchFile(file, () => { fs.unwatchFile(file);console.log(`Update'${__filename
   //save_status: process.env.AUTO_SAVE_STATUS || "false",
   //aitts_Voice_Id : process.env.AITTS_ID || "37",
   //ELEVENLAB_API_KEY: process.env.ELEVENLAB_API_KEY  || "",
+
+  
